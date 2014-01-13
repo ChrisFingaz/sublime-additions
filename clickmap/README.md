@@ -1,0 +1,5 @@
+OSX click map
+=================
+
+Installation:
+
