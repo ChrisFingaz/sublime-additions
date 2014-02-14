@@ -1,5 +1,5 @@
-OSX click map
-=================
+Loopy Build Script
+==================
 
 ###Installation:
 
