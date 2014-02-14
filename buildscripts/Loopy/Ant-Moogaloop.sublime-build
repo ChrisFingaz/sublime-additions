@@ -1,0 +1,22 @@
+{
+	"cmd": ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop.xml", "moogaloop-build-and-copy-to-deploy-RELEAS"],
+  	
+  	"variants" : [
+
+  		{
+  			"cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop.xml", "moogaloop-build-and-copy-to-deploy-DEBUG"],
+  			"name" : "Moogaloop Debug"
+  		},
+
+      {
+        "cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop.xml", "moogaloop-build-and-copy-to-deploy-RELEASE"],
+        "name" : "Moogaloop Release"
+      },
+
+  		{
+  			"cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop.xml", "create-docs"],
+  			"name" : "Moogaloop Create Documentation"
+  		}
+
+  	]
+}
