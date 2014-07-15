@@ -1,0 +1,17 @@
+{
+	"cmd": ["ant", "-buildfile", "${project_path}/ant/build/ant_build.xml", "build-and-copy-to-deploy-RELEASE"],
+
+  	"variants" : [
+
+  		{
+  			"cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build.xml", "build-and-copy-to-deploy-DEBUG"],
+  			"name" : "Hubnut: Debug"
+  		},
+
+      {
+        "cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build.xml", "build-and-copy-to-deploy-RELEASE"],
+        "name" : "Hubnut: Release"
+      }
+
+  	]
+}

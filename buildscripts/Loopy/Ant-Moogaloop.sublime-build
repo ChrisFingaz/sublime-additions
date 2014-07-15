@@ -1,6 +1,6 @@
 {
-	"cmd": ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop.xml", "moogaloop-build-and-copy-to-deploy-RELEAS"],
-  	
+	"cmd": ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop.xml", "moogaloop-build-and-copy-to-deploy-RELEASE"],
+
   	"variants" : [
 
   		{
@@ -9,8 +9,28 @@
   		},
 
       {
+        "cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop.xml", "chrisl-moogaloop-copy-to-player-DEBUG"],
+        "name" : "Moogaloop Copy to Player"
+      },
+
+      {
+        "cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop_overlays.xml", "chrisl-moogaloop-copy-overlays-to-player-DEBUG"],
+        "name" : "Moogaloop Copy Overlays to Player"
+      },
+
+      {
         "cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop.xml", "moogaloop-build-and-copy-to-deploy-RELEASE"],
         "name" : "Moogaloop Release"
+      },
+
+      {
+        "cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop_overlays.xml", "moogaloop-views-overlays-build-and-copy-to-deploy-DEBUG"],
+        "name" : "Moogaloop Overlays Debug"
+      },
+
+      {
+        "cmd" : ["ant", "-buildfile", "${project_path}/ant/build/ant_build_moogaloop_overlays.xml", "moogaloop-views-overlays-build-and-copy-to-deploy-RELEASE"],
+        "name" : "Moogaloop Overlays Release"
       },
 
   		{
